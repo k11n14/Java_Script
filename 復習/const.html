@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Const理解</title>
+	</head>
+	<script>
+		const array = [3, 4, 5]; //配列
+		for (const b of array) {
+			// console.log(b);
+		}
+		// console.log(array[1]);
+		// console.log(array[index]);
+		array.forEach(function (A, B, C) {
+			console.log(A);
+			// console.log(B);
+			// console.log(C);
+			array[A] = B;
+		});
+		// console.log(array);
+
+		const mountain_date = { name: "富士山", place: "福岡県", high: "128m" };
+		// console.log(mountain_date.name)
+		const mountain_date_2 = [
+			{ name: "富士山", place: "福岡県", high: "128m" },
+			{ name: "たかみ山", place: "大分県", high: "2128m" },
+			{ name: "ムリムリダナ山", place: "エジプト", high: "99128m" },
+		];
+		// console.log(mountain_date_2[0]);
+		// console.log(mountain_date_2[2].name)
+
+		mountain_date_2.forEach(function (A, B, C) {
+			console.log(A);
+			console.log(A.name);
+			console.log(B)
+		});
+	</script>
+	<body></body>
+</html>
