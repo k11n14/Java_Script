@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+</head>
+<script>
+  // 12_N 文字目まで出力
+  function getOneToN(s, n) {
+    const x = s.substr(1, n);
+    return x
+  }
+
+  console.log(getOneToN("aabbccdd", 5)); // aabbc
+  console.log(getOneToN("gsacademyfukuoka", 9)); // gsacademy
+</script>
+
+<body>
+
+</body>
+
+</html>

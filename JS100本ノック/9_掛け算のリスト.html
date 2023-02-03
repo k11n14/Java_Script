@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+</head>
+<script>
+  // 9_掛け算のリスト
+  function createList(n) {
+    const x = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+    const y = []
+    for (i = 0; i < x.length; ++i) {
+      // console.log(i)
+      console.log(x[i] * n)
+      // console.log(x[i]*2)
+      y.push(x[i] * n);
+    }// y.splice(",")
+    return y.join(" ")
+    console.log(y)
+  };
+
+  console.log(createList(2)); // 2 4 6 8 10 12 14 16 18
+  console.log(createList(3)); // 3 6 9 12 15 18 21 24 27
+  console.log(createList(5)); // 5 10 15 20 25 30 35 40 45
+
+</script>
+
+<body>
+
+</body>
+
+</html>

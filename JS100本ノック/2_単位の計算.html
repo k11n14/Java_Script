@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+</head>
+
+<script>
+  // 2_単位の計算
+  function convertToMm(n, s) {
+    const unit = ["cm", "m", "km"]
+    const length = [10, 1000, 1000000]
+    if (s === unit[2]) {
+      return length[2] * n
+    } else if (s === unit[1]) {
+      return length[1] * n
+    } else if (s === unit[0]) {
+      return length[0] * n
+    }
+  }
+
+  console.log(convertToMm(1, "km")); // 1000000
+  console.log(convertToMm(54, "km")); // 54000000
+  console.log(convertToMm(2, "cm")); // 20
+</script>
+
+<body>
+
+</body>
+
+</html>
