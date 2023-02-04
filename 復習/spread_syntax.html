@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>スプレッド構文</title>
+	</head>
+	<body>
+		<script>
+			// 配列
+			const array = [1, 2, 3];
+			console.log(array);
+
+			// [...配列名]：コピー
+			const copyarray = [...array];
+			console.log(copyarray);
+
+			// [...配列名,値１,値２,値〜]：配列追加
+			const addarray = [...array, 4, 5, 6];
+			console.log(addarray);
+
+			// [...配列名,...配列名]：配列合体
+			const mergearray = [...copyarray, ...addarray];
+			console.log(mergearray);
+
+			// オブジェクト
+			const object = { firstname: "koga" };
+			console.log(object);
+
+			const copyobject = { ...object };
+			console.log(copyobject);
+
+			const addobject = { ...object, age: 27 };
+			console.log(addobject);
+
+			const mergeobject = { ...object, ...{ lastname: "yamada", age: 18 } };
+			console.log(mergeobject);
+
+			const newobject = [
+				{ name: "Nissa", color: "Green" },
+				{ name: "Aesi", color: "Red" },
+			];
+			console.log(newobject);
+
+      const mountain_date_2 = [
+			{ name: "富士山", place: "福岡県", high: "128m" },
+			{ name: "たかみ山", place: "大分県", high: "2128m" },
+			{ name: "ムリムリダナ山", place: "エジプト", high: "99128m" },
+		];
+
+      const testmergeobject = {...mountain_date_2,...newobject};
+      console.log(testmergeobject);
+
+		</script>
+	</body>
+</html>
