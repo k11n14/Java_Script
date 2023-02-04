@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>三項演算子</title>
-</head>
-<body>
-  <script>
-    
-  </script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>三項演算子</title>
+	</head>
+	<body>
+		<script>
+			let result;
+			const isReact = (val) => {
+				if (val === "React") {
+					return true;
+				} else {
+					return false;
+				}
+			};
+			result = isReact("nisect");
+			console.log(result);
+
+			// 三項演算子
+			// 条件式 ? 条件を満たす : 条件を満たさない
+			const isReact2 = (val) =>
+				val === "react" ? console.log("ok") : console.log("no");
+			result = isReact2("react");
+		</script>
+	</body>
 </html>
